@@ -16,79 +16,79 @@ After importing the `carousel.css` into your HTML file, you can create a carouse
 
 First, create the container for the carousel:
 
-`<div class="carousel">`
-`	...`
+`<div class="carousel">`  
+`	...`  
 `</div>`  
 
 Next, add a wrapper container inside the carousel:
    
-`<div class="carousel">`
-`	<div class="carousel-wrapper">`
-`		...`
-`	</div>`
-`</div>`
+`<div class="carousel">`  
+`	<div class="carousel-wrapper">`  
+`		...`  
+`	</div>`  
+`</div>`  
   
 Now, add individual slides and their content. In this example, three slides are added, but you can add up to 10 slides:
   
-`<div class="carousel">`
-`	<div class="carousel-wrapper">`
-`		<div class="carousel-slide">`
-`           Slide 1`
-`       </div>`
-`		<div class="carousel-slide">`
-`           Slide 2`
-`       </div>`
-`		<div class="carousel-slide">`
-`           Slide 3`
-`       </div>`
-`	</div>`
-`</div>`
+`<div class="carousel">`  
+`	<div class="carousel-wrapper">`  
+`		<div class="carousel-slide">`  
+`           Slide 1`  
+`       </div>`  
+`		<div class="carousel-slide">`  
+`           Slide 2`  
+`       </div>`  
+`		<div class="carousel-slide">`  
+`           Slide 3`  
+`       </div>`  
+`	</div>`  
+`</div>`  
 
 Next, add bullets for carousel navigation. These should be defined before the `carousel-wrapper` and should not be nested in other containers. Make sure to set the first radio button to checked. The `id="carousel-css-slide-1"` should be unique for each radio button and should not be used in any other carousel. Also, make sure to set the value to the corresponding slide, e.g., `slide-1`. The value should always be specified as `slide-x`, where `x` represents the slide number. This value can be reused in other carousels as well.
 
-`<div class="carousel">`
-`   `
-`	<input type="radio" id="carousel-css-slide-1" name="carousel-css" value="slide-1" checked/>`
-`	<input type="radio" id="carousel-css-slide-2" name="carousel-css" value="slide-2"/>`
-`	<input type="radio" id="carousel-css-slide-3" name="carousel-css" value="slide-3"/>`
-`  ` 
-`	<div class="carousel-wrapper">`
-`		<div class="carousel-slide">`
-`           Slide 1`
-`       </div>`
-`		<div class="carousel-slide">`
-`           Slide 2`
-`       </div>`
-`		<div class="carousel-slide">`
-`           Slide 3`
-`       </div>`
-`	</div>`
-`</div>`
+`<div class="carousel">`  
+`   `  
+`	<input type="radio" id="carousel-css-slide-1" name="carousel-css" value="slide-1" checked/>`  
+`	<input type="radio" id="carousel-css-slide-2" name="carousel-css" value="slide-2"/>`  
+`	<input type="radio" id="carousel-css-slide-3" name="carousel-css" value="slide-3"/>`  
+`  `   
+`	<div class="carousel-wrapper">`  
+`		<div class="carousel-slide">`  
+`           Slide 1`  
+`       </div>`  
+`		<div class="carousel-slide">`  
+`           Slide 2`  
+`       </div>`  
+`		<div class="carousel-slide">`  
+`           Slide 3`  
+`       </div>`  
+`	</div>`  
+`</div>`  
   
 Finally, add navigation arrows to the carousel. These will appear on the left and right sides of the carousel and are optional. Please ensure that you provide the for attribute with the corresponding ID of the radio button.
 
-`<div class="carousel">`
-`   `
-`	<input type="radio" id="carousel-css-slide-1" name="carousel-css" value="slide-1" checked/>`
-`	<input type="radio" id="carousel-css-slide-2" name="carousel-css" value="slide-2"/>`
-`	<input type="radio" id="carousel-css-slide-3" name="carousel-css" value="slide-3"/>`
-`  `
-`	<label for="carousel-css-slide-1" data-value="slide-1"></label>`
-`	<label for="carousel-css-slide-2" data-value="slide-2"></label>`
-`	<label for="carousel-css-slide-3" data-value="slide-3"></label>`
-`  ` 
-`	<div class="carousel-wrapper">`
-`		<div class="carousel-slide">`
-`           Slide 1`
-`       </div>`
-`		<div class="carousel-slide">`
-`           Slide 2`
-`       </div>`
-`		<div class="carousel-slide">`
-`           Slide 3`
-`       </div>`
-`	</div>`
-`</div>`
+`<div class="carousel">`  
+`   `  
+`	<input type="radio" id="carousel-css-slide-1" name="carousel-css" value="slide-1" checked/>`  
+`	<input type="radio" id="carousel-css-slide-2" name="carousel-css" value="slide-2"/>`  
+`	<input type="radio" id="carousel-css-slide-3" name="carousel-css" value="slide-3"/>`  
+`  `  
+`	<label for="carousel-css-slide-1" data-value="slide-1"></label>`  
+`	<label for="carousel-css-slide-2" data-value="slide-2"></label>`  
+`	<label for="carousel-css-slide-3" data-value="slide-3"></label>`  
+`  `   
+`	<div class="carousel-wrapper">`  
+`		<div class="carousel-slide">`  
+`           Slide 1`  
+`       </div>`  
+`		<div class="carousel-slide">`  
+`           Slide 2`  
+`       </div>`  
+`		<div class="carousel-slide">`  
+`           Slide 3`  
+`       </div>`  
+`	</div>`  
+`</div>`  
 
 ## Requirements
 - Text-Editor for editing the code files
