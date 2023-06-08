@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarouselCSS</title>
+    <link rel="stylesheet" href="./carousel.css">
+    <style>
+        /* Custom style, not part of the framework */
+        html, body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .carousel{
+            width: 50rem;
+            height: 25rem;
+        }
+
+        .carousel-slide:nth-child(1){
+            background-color: lightgreen;
+        }
+
+        .carousel-slide:nth-child(2){
+            background-color: lightcoral;
+        }
+
+        .carousel-slide:nth-child(3){
+            background-color: lightblue;
+        }
+
+        .carousel-slide:nth-child(4){
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel">
+
+        <input type="radio" id="carousel-css-slide-1" name="carousel-css" value="slide-1" checked/>
+        <input type="radio" id="carousel-css-slide-2" name="carousel-css" value="slide-2"/>
+        <input type="radio" id="carousel-css-slide-3" name="carousel-css" value="slide-3"/>
+        <input type="radio" id="carousel-css-slide-4" name="carousel-css" value="slide-4"/>
+
+        <label for="carousel-css-slide-1" data-value="slide-1"></label>
+        <label for="carousel-css-slide-2" data-value="slide-2"></label>
+        <label for="carousel-css-slide-3" data-value="slide-3"></label>
+        <label for="carousel-css-slide-4" data-value="slide-4"></label>
+
+        <div class="carousel-wrapper">
+            <div class="carousel-slide">
+                Slide 1
+            </div>
+            <div class="carousel-slide">
+                Slide 2
+            </div>
+            <div class="carousel-slide">
+                Slide 3
+            </div>
+            <div class="carousel-slide">
+                Slide 4
+            </div>
+        </div>
+    </div>
+</body>
+</html>
