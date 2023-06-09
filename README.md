@@ -1,6 +1,6 @@
 # CarouselCSS
 [![HTML5](https://img.shields.io/badge/html5-black?style=for-the-badge&logo=html5)](https://hub.docker.com/u/marzeckm)
-[![CSS3](https://img.shields.io/badge/css3-black?style=for-the-badge&logo=css3)](https://hub.docker.com/u/marzeckm)  
+[![CSS3](https://img.shields.io/badge/css3-black?style=for-the-badge&logo=css3)](https://hub.docker.com/u/marzeckm)
   
 A carousel with pure HTML, CSS (no JavaScript needed). Currently there are supported up to 10 Slides per Carousel.
 
@@ -93,12 +93,20 @@ Finally, add navigation arrows to the carousel. These will appear on the left an
 `	</div>`  
 `</div>`  
 
+Additionally, you can define special classes alongside the `carousel` class to better personalize the carousel. You can also combine multiple classes to achieve desired functionalities. 
+
+With the class `carousel-no-bullets`, you can hide the bullets used for navigation.
+
+`<div class="carousel carousel-no-bullets">`  
+`	...`  
+`</div>`  
+
 ## Requirements
 - Text-Editor for editing the code files
 - Min. Internet Explorer 11, Firefox 70, Google Chrome 70, Safari 11, Chromium 70
 
 ## Contribute
-If you want to contribute to the development of this project, feel free to submit pull requests or open issues. Let's make CarouselCSS even better together!
+If you want to contribute to the development of this project, feel free to submit pull requests or open issues. Let's make ServerVBS even better together!
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
