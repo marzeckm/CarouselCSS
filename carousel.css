@@ -187,3 +187,9 @@ input[name="carousel-css"][value="slide-9"]:checked ~ label[data-value="slide-10
     display: inline-block;
     right: 1rem;
 }
+
+/* Special functions for the carousel */
+
+.carousel-no-bullets input[name="carousel-css"][value|="slide"]{
+    display: none;
+}
