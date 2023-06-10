@@ -193,3 +193,10 @@ input[name="carousel-css"][value="slide-9"]:checked ~ label[data-value="slide-10
 .carousel-no-bullets input[name="carousel-css"][value|="slide"]{
     display: none;
 }
+
+.carousel-non-selectable{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}

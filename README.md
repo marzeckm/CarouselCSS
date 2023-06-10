@@ -101,6 +101,12 @@ With the class `carousel-no-bullets`, you can hide the bullets used for navigati
 `	...`  
 `</div>`  
 
+With the class `carousel-non-selectable` you can disable the possibility to select any content of the carousel.
+
+`<div class="carousel carousel-non-selectable">`  
+`	...`  
+`</div>`  
+
 ## Requirements
 - Text-Editor for editing the code files
 - Min. Internet Explorer 11, Firefox 70, Google Chrome 70, Safari 11, Chromium 70
