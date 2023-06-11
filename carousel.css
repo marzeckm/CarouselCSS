@@ -85,12 +85,22 @@ input[name="carousel-css"][value="slide-5"]:checked ~ .carousel-wrapper .carouse
 input[name="carousel-css"][value="slide-6"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(7),
 input[name="carousel-css"][value="slide-7"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(8),
 input[name="carousel-css"][value="slide-8"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(9),
-input[name="carousel-css"][value="slide-9"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(10){
+input[name="carousel-css"][value="slide-9"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(10),
+input[name="carousel-css"][value="slide-10"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(11),
+input[name="carousel-css"][value="slide-11"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(12),
+input[name="carousel-css"][value="slide-12"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(13),
+input[name="carousel-css"][value="slide-13"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(14),
+input[name="carousel-css"][value="slide-14"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(15){
     transition: 0.5s transform;
     transform: translate(100%, 0);
 }
 
 input[name="carousel-css"][value="slide-1"]:checked ~ .carousel-wrapper .carousel-slide:last-child,
+input[name="carousel-css"][value="slide-15"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(14),
+input[name="carousel-css"][value="slide-14"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(13),
+input[name="carousel-css"][value="slide-13"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(12),
+input[name="carousel-css"][value="slide-12"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(11),
+input[name="carousel-css"][value="slide-11"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(10),
 input[name="carousel-css"][value="slide-10"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(9),
 input[name="carousel-css"][value="slide-9"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(8),
 input[name="carousel-css"][value="slide-8"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(7),
@@ -116,7 +126,12 @@ input[name="carousel-css"][value="slide-6"]:checked ~ .carousel-wrapper .carouse
 input[name="carousel-css"][value="slide-7"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(7),
 input[name="carousel-css"][value="slide-8"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(8),
 input[name="carousel-css"][value="slide-9"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(9),
-input[name="carousel-css"][value="slide-10"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(10){
+input[name="carousel-css"][value="slide-10"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(10),
+input[name="carousel-css"][value="slide-11"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(11),
+input[name="carousel-css"][value="slide-12"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(12),
+input[name="carousel-css"][value="slide-13"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(13),
+input[name="carousel-css"][value="slide-14"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(14),
+input[name="carousel-css"][value="slide-15"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(15){
     transition: 0.5s transform;
     transform: translate(0, 0);
     opacity: 1;
@@ -169,7 +184,12 @@ input[name="carousel-css"][value="slide-6"]:checked ~ label[data-value="slide-5"
 input[name="carousel-css"][value="slide-7"]:checked ~ label[data-value="slide-6"]::before,
 input[name="carousel-css"][value="slide-8"]:checked ~ label[data-value="slide-7"]::before,
 input[name="carousel-css"][value="slide-9"]:checked ~ label[data-value="slide-8"]::before,
-input[name="carousel-css"][value="slide-10"]:checked ~ label[data-value="slide-9"]::before{
+input[name="carousel-css"][value="slide-10"]:checked ~ label[data-value="slide-9"]::before,
+input[name="carousel-css"][value="slide-11"]:checked ~ label[data-value="slide-10"]::before,
+input[name="carousel-css"][value="slide-12"]:checked ~ label[data-value="slide-11"]::before,
+input[name="carousel-css"][value="slide-13"]:checked ~ label[data-value="slide-12"]::before,
+input[name="carousel-css"][value="slide-14"]:checked ~ label[data-value="slide-13"]::before,
+input[name="carousel-css"][value="slide-15"]:checked ~ label[data-value="slide-14"]::before{
     display: inline-block;
     left: 1rem;
 }
@@ -183,7 +203,12 @@ input[name="carousel-css"][value="slide-5"]:checked ~ label[data-value="slide-6"
 input[name="carousel-css"][value="slide-6"]:checked ~ label[data-value="slide-7"]::after,
 input[name="carousel-css"][value="slide-7"]:checked ~ label[data-value="slide-8"]::after,
 input[name="carousel-css"][value="slide-8"]:checked ~ label[data-value="slide-9"]::after,
-input[name="carousel-css"][value="slide-9"]:checked ~ label[data-value="slide-10"]::after{
+input[name="carousel-css"][value="slide-9"]:checked ~ label[data-value="slide-10"]::after,
+input[name="carousel-css"][value="slide-10"]:checked ~ label[data-value="slide-11"]::after,
+input[name="carousel-css"][value="slide-11"]:checked ~ label[data-value="slide-12"]::after,
+input[name="carousel-css"][value="slide-12"]:checked ~ label[data-value="slide-13"]::after,
+input[name="carousel-css"][value="slide-13"]:checked ~ label[data-value="slide-14"]::after,
+input[name="carousel-css"][value="slide-14"]:checked ~ label[data-value="slide-15"]::after{
     display: inline-block;
     right: 1rem;
 }
