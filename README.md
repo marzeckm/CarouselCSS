@@ -2,7 +2,7 @@
 [![HTML5](https://img.shields.io/badge/html5-black?style=for-the-badge&logo=html5)](https://hub.docker.com/u/marzeckm)
 [![CSS3](https://img.shields.io/badge/css3-black?style=for-the-badge&logo=css3)](https://hub.docker.com/u/marzeckm)
   
-A carousel with pure HTML, CSS (no JavaScript needed). Currently there are supported up to 15 Slides per Carousel.
+A carousel with pure HTML, CSS (no JavaScript needed). Currently there are supported up to 20 Slides per Carousel.
 
 ## Installation
 To install CarouselCSS, it is sufficient to download the files from GitHub. Afterwards, insert the `carousel.css` into your project.
@@ -31,7 +31,7 @@ Next, add a wrapper container inside the carousel:
 `	</div>`  
 `</div>`  
   
-Now, add individual slides and their content. In this example, three slides are added, but you can add up to 15 slides:
+Now, add individual slides and their content. In this example, three slides are added, but you can add up to 20 slides:
   
 `<div class="carousel">`  
 `	<div class="carousel-wrapper">`  
