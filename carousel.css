@@ -257,9 +257,3 @@ input[name="carousel-css"][value="slide-19"]:checked ~ label[data-value="slide-2
     -ms-user-select: none;
     user-select: none; 
 }
-
-@keyframes --test{
-    99%{
-        z-index: 0;
-    }
-}
