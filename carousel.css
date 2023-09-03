@@ -33,6 +33,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 0;
 
     transform: translate(100%, 0);
     opacity: 0;
@@ -57,7 +58,7 @@ input[name="carousel-css"]{
   align-items: center;
 
   position: relative;
-  z-index: 1;
+  z-index: 3;
 
   margin: 0.125rem;
 }
@@ -75,6 +76,32 @@ input[name="carousel-css"]:checked::before{
 }
 
 /* Hide unnecessary radio buttons */
+
+input[name="carousel-css"][value="slide-20"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(19),
+input[name="carousel-css"][value="slide-19"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(18),
+input[name="carousel-css"][value="slide-18"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(17),
+input[name="carousel-css"][value="slide-17"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(16),
+input[name="carousel-css"][value="slide-16"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(15),
+input[name="carousel-css"][value="slide-15"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(14),
+input[name="carousel-css"][value="slide-14"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(13),
+input[name="carousel-css"][value="slide-13"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(12),
+input[name="carousel-css"][value="slide-12"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(11),
+input[name="carousel-css"][value="slide-11"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(10),
+input[name="carousel-css"][value="slide-10"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(9),
+input[name="carousel-css"][value="slide-9"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(8),
+input[name="carousel-css"][value="slide-8"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(7),
+input[name="carousel-css"][value="slide-7"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(6),
+input[name="carousel-css"][value="slide-6"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(5),
+input[name="carousel-css"][value="slide-5"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(4),
+input[name="carousel-css"][value="slide-4"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(3),
+input[name="carousel-css"][value="slide-3"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(2),
+input[name="carousel-css"][value="slide-2"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(1),
+input[name="carousel-css"][value="slide-1"]:checked ~ .carousel-wrapper .carousel-slide:last-of-type{
+    display: flex;
+    opacity: 1;
+    transform: translate(-100%, 0);
+    transition: 0.5s transform, 0.1s z-index 0.4s;
+}
 
 input[name="carousel-css"][value="slide-1"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(2),
 input[name="carousel-css"][value="slide-2"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(3),
@@ -99,34 +126,7 @@ input[name="carousel-css"]:last-of-type:checked ~ .carousel-wrapper .carousel-sl
     display: flex;
     opacity: 1;
     transform: translate(100%, 0);
-    transition: 0.5s transform;
-}
-
-
-input[name="carousel-css"][value="slide-20"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(19),
-input[name="carousel-css"][value="slide-19"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(18),
-input[name="carousel-css"][value="slide-18"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(17),
-input[name="carousel-css"][value="slide-17"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(16),
-input[name="carousel-css"][value="slide-16"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(15),
-input[name="carousel-css"][value="slide-15"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(14),
-input[name="carousel-css"][value="slide-14"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(13),
-input[name="carousel-css"][value="slide-13"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(12),
-input[name="carousel-css"][value="slide-12"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(11),
-input[name="carousel-css"][value="slide-11"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(10),
-input[name="carousel-css"][value="slide-10"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(9),
-input[name="carousel-css"][value="slide-9"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(8),
-input[name="carousel-css"][value="slide-8"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(7),
-input[name="carousel-css"][value="slide-7"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(6),
-input[name="carousel-css"][value="slide-6"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(5),
-input[name="carousel-css"][value="slide-5"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(4),
-input[name="carousel-css"][value="slide-4"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(3),
-input[name="carousel-css"][value="slide-3"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(2),
-input[name="carousel-css"][value="slide-2"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(1),
-input[name="carousel-css"][value="slide-1"]:checked ~ .carousel-wrapper .carousel-slide:last-of-type{
-    display: flex;
-    opacity: 1;
-    transition: 0.5s transform;
-    transform: translate(-100%, 0);
+    transition: 0.5s transform, 0.1s z-index 0.4s;
 }
 
 
@@ -156,6 +156,7 @@ input[name="carousel-css"][value="slide-20"]:checked ~ .carousel-wrapper .carous
     transition: 0.5s transform;
     transform: translate(0, 0);
     opacity: 1;
+    z-index: 2;
 }
 
 /* Next and prev buttons */
@@ -170,7 +171,7 @@ input[name="carousel-css"][value="slide-20"]:checked ~ .carousel-wrapper .carous
     content: "";
     display: none;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
 
     width: 3rem;
     height: 3rem;
@@ -255,4 +256,10 @@ input[name="carousel-css"][value="slide-19"]:checked ~ label[data-value="slide-2
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none; 
+}
+
+@keyframes --test{
+    99%{
+        z-index: 0;
+    }
 }
