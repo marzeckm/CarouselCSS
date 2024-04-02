@@ -112,7 +112,7 @@ With the class `carousel-non-selectable` you can disable the possibility to sele
 - Min. Internet Explorer 11, Firefox 70, Google Chrome 70, Safari 11, Chromium 70
 
 ## Contribute
-If you want to contribute to the development of this project, feel free to submit pull requests or open issues. Let's make ServerVBS even better together!
+If you want to contribute to the development of this project, feel free to submit pull requests or open issues. Let's make CarouselCSS even better together!
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
