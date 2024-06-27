@@ -1,0 +1,65 @@
+/**
+ * Component that contains the main-code of the carousel
+ * @component { Main }
+ */
+@media all{
+    .carousel{
+        background-color: grey;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        min-height: 15rem;
+        padding: 0.5rem;
+    }
+    
+    .carousel *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .carousel-wrapper{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+    }
+    
+    input[name="carousel-css"]{
+      -webkit-appearance: none;
+      appearance: none;
+      margin: 0;
+    
+      border: 1px solid rgb(150,150,150);
+      background-color: rgb(250,250,250);
+    
+      width: 1rem;
+      height: 1rem;
+    
+      cursor: pointer;
+      border-radius: 50%;
+    
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    
+      position: relative;
+      z-index: 3;
+    
+      margin: 0.125rem;
+    }
+    
+    input[name="carousel-css"]:checked{
+        display: inline-flex;
+    }
+    
+    input[name="carousel-css"]:checked::before{
+        content: "";
+        background-color: #6495ED;
+        border-radius: 50%;
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+    }    
+}

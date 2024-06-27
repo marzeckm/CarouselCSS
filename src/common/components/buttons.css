@@ -1,0 +1,99 @@
+/**
+ * Component that contains all the button-code for the carousel
+ * @component { Button }
+ */
+@media all{
+    .carousel label[data-value|="slide"]{
+        width: 0 !important;
+        height: 0 !important;
+    }
+    
+    .carousel label[data-value|="slide"]::before,
+    .carousel label[data-value|="slide"]::after{
+        content: "";
+        display: none;
+        position: absolute;
+        z-index: 3;
+    
+        width: 3rem;
+        height: 3rem;
+    
+        background-color: rgba(10,10,10,0.5);
+        border-radius: 0.5rem;
+        opacity: 1;
+    
+        cursor: pointer;
+    
+        top: 0; bottom: 0;
+        margin: auto 0;
+    
+        background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAtOTYwIDk2MCA5NjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Im02NDAtODAtNDAwLTQwMCA0MDAtNDAwIDU2IDU3LTM0MyAzNDMgMzQzIDM0M3oiIGZpbGw9IiNmZmYiLz4KPC9zdmc+Cg==");
+    }
+    
+    .carousel label[data-value|="slide"]::after{
+        transform: rotate(180deg);
+    }
+    
+    .carousel label[data-value|="slide"]::before:hover,
+    .carousel label[data-value|="slide"]::before:after{
+        background-color: rgba(10,10,10,0.8);
+    }
+    
+    input[name="carousel-css"][value="slide-1"]:checked ~ label[data-value|="slide"]:last-of-type::before,
+    input[name="carousel-css"][value="slide-2"]:checked ~ label[data-value="slide-1"]::before,
+    input[name="carousel-css"][value="slide-3"]:checked ~ label[data-value="slide-2"]::before,
+    input[name="carousel-css"][value="slide-4"]:checked ~ label[data-value="slide-3"]::before,
+    input[name="carousel-css"][value="slide-5"]:checked ~ label[data-value="slide-4"]::before,
+    input[name="carousel-css"][value="slide-6"]:checked ~ label[data-value="slide-5"]::before,
+    input[name="carousel-css"][value="slide-7"]:checked ~ label[data-value="slide-6"]::before,
+    input[name="carousel-css"][value="slide-8"]:checked ~ label[data-value="slide-7"]::before,
+    input[name="carousel-css"][value="slide-9"]:checked ~ label[data-value="slide-8"]::before,
+    input[name="carousel-css"][value="slide-10"]:checked ~ label[data-value="slide-9"]::before,
+    input[name="carousel-css"][value="slide-11"]:checked ~ label[data-value="slide-10"]::before,
+    input[name="carousel-css"][value="slide-12"]:checked ~ label[data-value="slide-11"]::before,
+    input[name="carousel-css"][value="slide-13"]:checked ~ label[data-value="slide-12"]::before,
+    input[name="carousel-css"][value="slide-14"]:checked ~ label[data-value="slide-13"]::before,
+    input[name="carousel-css"][value="slide-15"]:checked ~ label[data-value="slide-14"]::before,
+    input[name="carousel-css"][value="slide-16"]:checked ~ label[data-value="slide-15"]::before,
+    input[name="carousel-css"][value="slide-17"]:checked ~ label[data-value="slide-16"]::before,
+    input[name="carousel-css"][value="slide-18"]:checked ~ label[data-value="slide-17"]::before,
+    input[name="carousel-css"][value="slide-19"]:checked ~ label[data-value="slide-18"]::before,
+    input[name="carousel-css"][value="slide-20"]:checked ~ label[data-value="slide-19"]::before,
+    input[name="carousel-css"][value="slide-21"]:checked ~ label[data-value="slide-20"]::before,
+    input[name="carousel-css"][value="slide-22"]:checked ~ label[data-value="slide-21"]::before,
+    input[name="carousel-css"][value="slide-23"]:checked ~ label[data-value="slide-22"]::before,
+    input[name="carousel-css"][value="slide-24"]:checked ~ label[data-value="slide-23"]::before,
+    input[name="carousel-css"][value="slide-25"]:checked ~ label[data-value="slide-24"]::before{
+        display: inline-block;
+        left: 1rem;
+    }
+    
+    input[name="carousel-css"][value|="slide"]:last-of-type:checked ~ label[data-value="slide-1"]::after,
+    input[name="carousel-css"][value="slide-1"]:checked ~ label[data-value="slide-2"]::after,
+    input[name="carousel-css"][value="slide-2"]:checked ~ label[data-value="slide-3"]::after,
+    input[name="carousel-css"][value="slide-3"]:checked ~ label[data-value="slide-4"]::after,
+    input[name="carousel-css"][value="slide-4"]:checked ~ label[data-value="slide-5"]::after,
+    input[name="carousel-css"][value="slide-5"]:checked ~ label[data-value="slide-6"]::after,
+    input[name="carousel-css"][value="slide-6"]:checked ~ label[data-value="slide-7"]::after,
+    input[name="carousel-css"][value="slide-7"]:checked ~ label[data-value="slide-8"]::after,
+    input[name="carousel-css"][value="slide-8"]:checked ~ label[data-value="slide-9"]::after,
+    input[name="carousel-css"][value="slide-9"]:checked ~ label[data-value="slide-10"]::after,
+    input[name="carousel-css"][value="slide-10"]:checked ~ label[data-value="slide-11"]::after,
+    input[name="carousel-css"][value="slide-11"]:checked ~ label[data-value="slide-12"]::after,
+    input[name="carousel-css"][value="slide-12"]:checked ~ label[data-value="slide-13"]::after,
+    input[name="carousel-css"][value="slide-13"]:checked ~ label[data-value="slide-14"]::after,
+    input[name="carousel-css"][value="slide-14"]:checked ~ label[data-value="slide-15"]::after,
+    input[name="carousel-css"][value="slide-15"]:checked ~ label[data-value="slide-16"]::after,
+    input[name="carousel-css"][value="slide-16"]:checked ~ label[data-value="slide-17"]::after,
+    input[name="carousel-css"][value="slide-17"]:checked ~ label[data-value="slide-18"]::after,
+    input[name="carousel-css"][value="slide-18"]:checked ~ label[data-value="slide-19"]::after,
+    input[name="carousel-css"][value="slide-19"]:checked ~ label[data-value="slide-20"]::after,
+    input[name="carousel-css"][value="slide-20"]:checked ~ label[data-value="slide-21"]::after,
+    input[name="carousel-css"][value="slide-21"]:checked ~ label[data-value="slide-22"]::after,
+    input[name="carousel-css"][value="slide-22"]:checked ~ label[data-value="slide-23"]::after,
+    input[name="carousel-css"][value="slide-23"]:checked ~ label[data-value="slide-24"]::after,
+    input[name="carousel-css"][value="slide-24"]:checked ~ label[data-value="slide-25"]::after{
+        display: inline-block;
+        right: 1rem;
+    }
+}

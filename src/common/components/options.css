@@ -1,0 +1,22 @@
+/**
+ * Component that contains all the different options for the carousel
+ * @component { Options }
+ */
+@media all{
+    /**
+     * Removes the bullets from the carousel
+     */
+    .carousel-no-bullets input[name="carousel-css"][value|="slide"]{
+        display: none;
+    }
+    
+    /**
+     * Makes the carousel non-selectable by mouse
+     */
+    .carousel-non-selectable{
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; 
+    }    
+}
